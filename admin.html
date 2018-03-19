@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pets Admin</title>
+    </head>
+    <body>
+        <header>
+            <a href="#">log out</a>
+            <h1>Happily Furrever After</h1>
+            <p>Admin Dashboard</p>
+        </header>
+        <section>
+            <table>
+                <caption>Incoming Requests</caption>
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Pet Name</th>
+                        <th>Pet ID</th>
+                        <th>Type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO: Generate this with PHP -->
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td><a href="/pets/1">Fido</a></td>
+                        <td><a href="/pets/1">1</a></td>
+                        <td>Adoption</td>
+                        <td>
+                            <input type="button" value="approve">
+                            <input type="button" value="deny">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Assign Pets to Adopters</h2>
+            <form>
+                <select name="Customer">
+                    <option value="Jane Doe">Jane Doe</option>
+                    <option value="John Doe">John Doe</option>
+                </select>
+                <select name="Type">
+                    <option value="Adopts">Adopts</option>
+                    <option value="Fosters">Fosters</option>
+                </select>
+                <select name="Pet">
+                    <option value="Fido">Fido</option>
+                    <option value="Rex">Rex</option>
+                </select>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <section>
+            <h2>Add a pet</h2>
+            <form>
+                <!-- TODO: Add the rest of the fields for adding a pet 
+                     and handle different kinds -->
+                <p>Name: <input type="text"></p>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </body>
+</html>
