@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel=stylesheet href="style.css" type="text/css">
         <title>Pets Admin</title>
     </head>
     <body>
@@ -10,8 +11,8 @@
             <p>Admin Dashboard</p>
         </header>
         <section>
+            <h2>Incoming Requests</h2>
             <table>
-                <caption>Incoming Requests</caption>
                 <thead>
                     <tr>
                         <th>Customer Name</th>
@@ -29,8 +30,8 @@
                         <td><a href="/pets/1">1</a></td>
                         <td>Adoption</td>
                         <td>
-                            <input type="button" value="approve">
-                            <input type="button" value="deny">
+                            <input class="button success" type="button" value="approve">
+                            <input class="button warn" type="button" value="deny">
                         </td>
                     </tr>
                 </tbody>
@@ -51,7 +52,7 @@
                     <option value="Fido">Fido</option>
                     <option value="Rex">Rex</option>
                 </select>
-                <input type="submit" value="submit">
+                <input class="button success" type="submit" value="submit">
             </form>
         </section>
         <section>
@@ -60,7 +61,7 @@
                 <!-- TODO: Add the rest of the fields for adding a pet 
                      and handle different kinds -->
                 <p>Name: <input type="text"></p>
-                <input type="submit" value="submit">
+                <input class="button success" type="submit" value="submit">
             </form>
         </section>
     </body>
